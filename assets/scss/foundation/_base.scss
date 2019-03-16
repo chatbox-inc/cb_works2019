@@ -1,0 +1,62 @@
+@import "../layout/_layout";
+
+:root{
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+
+html,body{
+  font-size: 1.4rem;
+  font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic",sans-serif;
+  background-color: #FAF7F7;
+  color: #4d4b4d;
+  line-height: 1.8;
+  font-feature-settings : "palt";
+  @include desktop(){
+    font-size: 1.6rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }
+}
+
+
+::selection {
+  background: rgba(231, 6, 0, 0.1);
+}
+
+#layout {
+  background: #fff;
+}
+
+a {
+  color: #C3504F;
+}
+
+strong {
+  font-weight: bold;
+}
